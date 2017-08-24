@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LCCollectionCell" id="RE8-D5-953" customClass="LCCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="76" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="76" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1公里" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JI8-rl-gJ9">
+                        <rect key="frame" x="5" y="40.5" width="66" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.69803921570000005" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="公里_icon" translatesAutoresizingMaskIntoConstraints="NO" id="F2a-qb-HA6">
+                        <rect key="frame" x="30" y="14.5" width="16" height="16"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="0.99998784070000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="JI8-rl-gJ9" firstAttribute="top" secondItem="F2a-qb-HA6" secondAttribute="bottom" constant="10" id="Gci-kj-Dla"/>
+                <constraint firstItem="JI8-rl-gJ9" firstAttribute="centerY" secondItem="RE8-D5-953" secondAttribute="centerY" constant="15" id="NxQ-fD-fjh"/>
+                <constraint firstItem="JI8-rl-gJ9" firstAttribute="leading" secondItem="RE8-D5-953" secondAttribute="leading" constant="5" id="ccc-Sp-ctl"/>
+                <constraint firstItem="F2a-qb-HA6" firstAttribute="centerX" secondItem="RE8-D5-953" secondAttribute="centerX" id="mNe-fQ-5va"/>
+                <constraint firstAttribute="trailing" secondItem="JI8-rl-gJ9" secondAttribute="trailing" constant="5" id="sU1-Qa-ZIy"/>
+            </constraints>
+            <size key="customSize" width="76" height="72"/>
+            <connections>
+                <outlet property="kilometerLabel" destination="JI8-rl-gJ9" id="jgZ-6S-hR4"/>
+            </connections>
+            <point key="canvasLocation" x="17" y="-7"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="公里_icon" width="16" height="16"/>
+    </resources>
+</document>
